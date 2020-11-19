@@ -1,0 +1,37 @@
+bank,desc,txndate,debit,credit,balance
+ALLAHABAD BANK,Description,Date,Debit,Credit,Balance
+ANDHRA BANK,Description,Date,Debit,Credit,Balance
+AXIS BANK,Description,Date,Debit,Credit,Balance
+AXIS BANK A,Description,Date,Debit,Credit,Balance
+BANK OF BARODA,Description,Date,Debit,Credit,Balance
+BANK OF INDIA,Description,Date,Debit,Credit,Balance
+BANK OF WIKI,Description,Date,Debit,Credit,Balance
+BANK OF MAHARASHTRA,Description,Date,Debit,Credit,Balance
+CANARA BANK,Description,Date,Debit,Credit,Balance
+CENTRAL BANK OF INDIA,Description,Date,Debit,Credit,Balance
+CITY UNION BANK,Description,Date,Debit,Credit,Balance
+HDFC BANK,Description,Date,Debit,Credit,Balance
+ICICI BANK 6,Description,Date,Debit,Credit,Balance
+ICICI BANK 80,Description,Date,Debit,Credit,Balance
+ICICI BANK 81,Description,Date,Debit,Credit,Balance
+ICICI BANK 82,Description,Date,Debit,Credit,Balance
+ICICI BANK 9,Description,Value Date,Amount,Credit,Balance
+INDIAN BANK,Description,Date,Debit,Credit,Balance
+INDIAN OVERSEAS BANK,Description,Date,Debit,Credit,Balance
+KARUR VYSYA BANK,Description,Date,Debit,Credit,Balance
+KOTAK MAHINDRA BANK,Description,Date,Amount,Credit,Balance
+KOTAK MAHINDRA BANK 8,Description,Date,Amount,Credit,Balance
+ORIENTAL BANK OF COMMERCE,Description,Date,Debit,Credit,Balance
+PUNJAB NATIONAL BANK,Description,Date,Debit,Credit,Balance
+RBL BANK,Description,Date,Debit,Credit,Balance
+SARASWAT CO+AC0-OPERATIVE BANK LTD,Description,Date,Debit,Credit,Balance
+SOUTH INDIAN BANK,Description,Date,Debit,Credit,Balance
+STATE BANK OF INDIA,Description,Date,Debit,Credit,Balance
+SYNDICATE BANK,Description,Date,Debit,Credit,Balance
+TAMILNAD MERCANTILE BANK,Description,Date,Debit,Credit,Balance
+UNITED BANK OF INDIA,Description,Date,Debit,Credit,Balance
+YES BANK,Description,Date,Debit,Credit,Balance
+INDUSIND BANK,Description,Date,Debit,Credit,Balance
+UCO BANK,Description,Date,Debit,Credit,Balance
+UNION BANK OF INDIA,Description,Date,Debit,Credit,Balance
+Unknown Bank,Description,Date,Debit,Credit,Balance

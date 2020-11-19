@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/style.css">
+    <title>Welcome to IN-D Credit :: Powered by Intain Technologies</title>
+</head>
+
+<body class="loginbody">
+    <div id="success" class="col-md-12 alert alert-success" style="display: none;">Successfully logged </div>
+    <div id="error" class="col-md-12 alert alert-danger" style="display: none;"></div>
+
+    <div class="container register" id="b4login">
+        <div class="row">
+            <div class="col-md-3 register-left">
+
+
+                <img src="./static/images/Robot-IND.png" class="rocket" alt="" />
+
+                <div class="logo"><a href="index.html"><img src="./static/images/ind_logo.png"></a></div>
+
+                <span class="analyzer" style="color: #fff">IN-D Credit</span>
+
+                <a style="margin-top: 30px; display: inline-block" href="register.html" class="btnRegister">Register</a> <br/>
+
+
+            </div>
+            <div class="col-md-9 register-right justify-content-center align-self-center">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                        
+                        <h3 class="register-heading">Login </h3>
+                        <div class="row register-form justify-content-center">
+                            <div class="col-md-8 col-sm-12">
+
+
+
+
+<div id="error" class="col-md-12 alert alert-danger"></div>
+
+                                <form method="POST" id="loginForm" action="upload_documents.html">
+
+
+
+                                    <div class="form-group">
+                                        <input required type="email" id="emailid" name="emailid" class="form-control"
+                                            placeholder="Email *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" required id="password" name="password" class="form-control"
+                                            placeholder="Password *" value="" />
+                                    </div>
+
+
+
+
+
+                                    <!-- <input type="submit" class="btnRegister" id="loginBtn" value="Login"/> -->
+
+
+
+                                    <button type="submit" class="btnRegister" id="loginBtn">
+                                        <img src="./static/images/loader2.gif" class="loginloader" id="wait2"
+                                            style="display: none;" />
+                                        Login </button>
+
+                                </form>
+
+                            
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" crossorigin="anonymous"></script>
+
+    <!-- <script src="js/custom.js"></script> -->
+
+
+    <!--Login API called-->
+    <script src="./static/js/login.js"></script>
+    <style>
+    #error:empty{ display: none;}
+    .loginloader{ margin: 5px 10px 5px 0px; float: left;}
+    </style>
+</body>
+
+</html>

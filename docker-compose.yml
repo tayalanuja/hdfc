@@ -1,0 +1,49 @@
+version: '3.5'
+
+services:
+
+  # intain_celery:
+  #   build: .
+  #   container_name: 'intain_celery'
+  #   volumes:
+  #     - '.:/usr/src/app'
+  #     - './data/logs:/usr/src/app/logs'
+  #   command: celery -A celery_tasks.tasks worker --loglevel=info  --logfile=data/logs/celery.log
+  #   environment:
+  #     - CELERY_BROKER=mongodb://intain_mongodb:27017/celery
+  #     - CELERY_BACKEND=mongodb://intain_mongodb:27017/celery
+  #   depends_on:
+  #     - intain_mongodb
+
+  # intain_celery_monitor:
+  #   build: .
+  #   container_name: 'intain_celery_monitor'
+  #   ports:
+  #     - '5555:5555'
+  #   command:  flower -A celery_tasks.tasks --port=5555 --broker=mongodb://intain_mongodb:27017/celery
+  #   depends_on:
+  #     - intain_mongodb
+
+  # intain_flask_server:
+  #   build: .
+  #   # image: flask
+  #   container_name: intain_flask_server
+  #   volumes:
+  #     - '.:/usr/src/app'
+  #   command: python run.py
+  #   environment:
+  #     - CELERY_BROKER=mongodb://intain_mongodb:27017/celery
+  #     - CELERY_BACKEND=mongodb://intain_mongodb:27017/celery
+  #   depends_on:
+  #     - intain_mongodb
+  #   ports:
+  #     - '5050:5050'
+
+  ind_mongodb:
+    image: mongo
+    container_name: 'ind_mongodb'
+    ports:
+      - "27017:27017"
+    volumes:
+      - "./data/mongodb:/data/db"
+

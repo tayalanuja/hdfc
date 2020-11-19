@@ -1,0 +1,25 @@
+{
+    "thres_dict_payslip": {
+        "employer_name_thres": 0.50,
+        "employee_name_thres" : 0.50,
+        "periodofpay_thres" : 0.50,
+        "net_salary_thres" : 0.50,
+        "gross_salary_thres":0.50
+        
+    },
+    "attrs_payslip": [
+        "employer_name",
+        "employee_name",
+        "periodofpay",       
+        "net_salary",
+        "gross_salary"
+    ],
+    "attrs_names_payslip": [
+        "Employer Name",
+        "Employee Name",
+        "Period Of Pay",
+        "Net Salary",
+        "Gross Salary"       
+    ]
+
+}

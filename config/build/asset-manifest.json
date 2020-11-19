@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/hdfc/static/css/main.004eafd0.chunk.css",
+    "main.js": "/hdfc/static/js/main.4fa631f9.chunk.js",
+    "main.js.map": "/hdfc/static/js/main.4fa631f9.chunk.js.map",
+    "runtime-main.js": "/hdfc/static/js/runtime-main.233137ae.js",
+    "runtime-main.js.map": "/hdfc/static/js/runtime-main.233137ae.js.map",
+    "static/css/2.38129d29.chunk.css": "/hdfc/static/css/2.38129d29.chunk.css",
+    "static/js/2.d711bcd4.chunk.js": "/hdfc/static/js/2.d711bcd4.chunk.js",
+    "static/js/2.d711bcd4.chunk.js.map": "/hdfc/static/js/2.d711bcd4.chunk.js.map",
+    "index.html": "/hdfc/index.html",
+    "precache-manifest.848437a435793c4e48dd60f62ee45ea4.js": "/hdfc/precache-manifest.848437a435793c4e48dd60f62ee45ea4.js",
+    "service-worker.js": "/hdfc/service-worker.js",
+    "static/css/2.38129d29.chunk.css.map": "/hdfc/static/css/2.38129d29.chunk.css.map",
+    "static/css/main.004eafd0.chunk.css.map": "/hdfc/static/css/main.004eafd0.chunk.css.map",
+    "static/js/2.d711bcd4.chunk.js.LICENSE": "/hdfc/static/js/2.d711bcd4.chunk.js.LICENSE",
+    "static/media/ind-logo.png": "/hdfc/static/media/ind-logo.cf3d9a0b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.233137ae.js",
+    "static/css/2.38129d29.chunk.css",
+    "static/js/2.d711bcd4.chunk.js",
+    "static/css/main.004eafd0.chunk.css",
+    "static/js/main.4fa631f9.chunk.js"
+  ]
+}

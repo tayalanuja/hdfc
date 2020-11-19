@@ -1,0 +1,30 @@
+# base image
+FROM mohitatintain/certex-img:latest
+
+sudo apt-get install -y libmagickwand-dev
+sudo apt-get install poppler-utils
+RUN apt-get install enchant -y
+
+# set working directory
+RUN mkdir -p /usr/src/app/webserverflask/static/uploads/
+RUN mkdir -p /tmp/intain_bactrak_ai
+WORKDIR /usr/src/app
+
+# add app
+COPY . /usr/src/app
+# RUN pip install .
+
+# add requirements
+# COPY ./requirements.txt /usr/src/app/requirements.txt
+
+# install requirements
+RUN pip install -U pip
+RUN pip install -r requirements.txt
+
+# COPY ./setup-nltk.py /usr/src/app/setup-nltk.py
+
+RUN python setup-nltk.py
+
+# add app
+# COPY . /usr/src/app
+RUN pip install .

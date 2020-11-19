@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/style.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/jquery-ui.css" />
+    <title>Welcome to IN-D Credit :: Powered by Intain Technologies</title>
+    <style>
+        .dz-default.dz-message {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css"
+        href="./static/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+</head>
+
+<body>
+
+    <div id="success" class="col-md-12 alert alert-success" style="display: none; position: fixed;">Data updated
+        successfully !! </div>
+    <div id="error" class="col-md-12 alert alert-danger" style="display: none;"></div>
+
+    <header class="topHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 col-sm-10 col-md-10">
+                    <div class="logoPlaceholder">
+                        <a href="main-dashboard.html">
+                            <img src="./static/images/ind_logo.png">
+                        </a>
+                        <span class="analyzer">IN-D Credit</span>
+                    </div>
+                    <div class="wizard-form">
+                        <div class="form-register" id="form-register">
+                            <div class="steps clearfix">
+                                <ul role="tablist">
+                                    <li role="tab" class="first current" aria-disabled="false" aria-selected="true">
+                                        <a id="upload_documents" href="upload_documents.html"
+                                            aria-controls="form-total-p-0"><span class="current-info audible"> </span>
+                                            <div class="title">
+                                                <span class="step-icon"> <i class="zmdi zmdi-cloud-upload"></i> </span>
+                                                <span class="step-text">Dashboard</span>
+                                            </div>
+                                        </a></li>
+                                    <li role="tab" class="current" aria-disabled="true"><a id="localization"
+                                            href="#nogo" aria-controls="form-total-p-1">
+                                            <div class="title">
+                                                <span class="step-icon"><i class="zmdi zmdi-view-dashboard"></i>
+                                                </span>
+                                                <span class="step-text">Localization</span>
+                                            </div>
+                                        </a></li>
+                                    <li role="tab" class="disabled last current" aria-disabled="true"><a
+                                            id="digitization" href="#nogo" aria-controls="form-total-p-2">
+                                            <div class="title">
+                                                <span class="step-icon"><i class="zmdi zmdi-file-text"></i>
+                                                </span>
+                                                <span class="step-text">Digitization</span>
+                                            </div>
+                                        </a></li>
+
+                                    <li role="tab" class="disabled last current" aria-disabled="true"><a id="download"
+                                            href="#nogo" aria-controls="form-total-p-2">
+                                            <div class="title">
+                                                <span class="step-icon"><i class="zmdi zmdi-cloud-download"></i>
+                                                </span>
+                                                <span class="step-text">Download CSV</span>
+                                            </div>
+                                        </a></li>
+
+                                    <li role="tab" class="disabled last current" aria-disabled="true"><a id="calcutions"
+                                            href="#nogo" aria-controls="form-total-p-2">
+                                            <div class="title">
+                                                <span class="step-icon"><i class="zmdi zmdi-trending-up"></i>
+                                                </span>
+                                                <span class="step-text">Validate</span>
+                                            </div>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-2 col-sm-2 col-md-2 text-right">
+                    <div class="dropdown">
+                        <a href="#nogo" data-toggle="dropdown">
+                            <img src="./static/images/user.png"> Welcome,
+                            <strong>User</strong>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Update Profile</a>
+                            <a class="dropdown-item" href="#">Settings </a>
+                            <!-- <a class="nav-item nav-link" href="index.html" id="logoutBtn"><i class="settings"></i>Logout</a> -->
+                            <a href="index.html">
+                                <button type="submit" class="logoutBtn btn-primary btn col-12" class="btn btn-primary"
+                                    style="width:200px; margin-left:-50px;">Logout</button>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mainMenu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12">
+                    <nav class="navbar navbar-expand-lg">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="mainContent">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 ">
+                    <section class="mainContent">
+
+                        <div id="wait2" class="loadingIcon" style="display: none;"> <img
+                                src="./static/images/loader.gif" class="loader" /> Please wait.... </div>
+
+                        <div class="tablePlaceholerDetails" style="margin: 15px; padding:15px;">
+
+                            <div class="clearfix"></div>
+                            <div class="charts">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="chart_outer" style="text-align: left;">
+                                            <iframe class="pdfPath" src="" width="100%" height="600px"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="chart_outer" style="text-align: left;">
+                                            <h5>Validate</h5>
+                                            <form class="form" id="form">
+                                                <table>
+
+                                                    <tr>
+                                                        <td>Account Holder</td>
+                                                        <td class="">
+                                                            <input type="text" name="account_holder" id="account_holder"
+                                                                class="form-control" />
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Type of Account
+                                                        </td>
+                                                        <td class="total_amount_credit">
+                                                            <input type="text" name="type_of_account"
+                                                                id="type_of_account" class="form-control" />
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Account Opening Date</td>
+                                                        <td class="closing_balance">
+                                                            <input type="text" name="account_opening_date"
+                                                                id="account_opening_date" class="form-control" />
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Monthly Average Balance</td>
+                                                        <td class="closing_balance">
+                                                            <input type="text" name="monthly_average_balance"
+                                                                id="monthly_average_balance" class="form-control" />
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Total Salary
+                                                        </td>
+                                                        <td class="total_amount_debited">
+                                                            <input type="text" name="total_salary" id="total_salary"
+                                                                class="form-control" />
+                                                        </td>
+                                                    </tr>
+
+
+                                                    <tr>
+                                                        <td>Comments
+                                                        </td>
+                                                        <td class="comments">
+                                                            <textarea type="text" name="comments" id="comments"
+                                                                class="form-control" ></textarea>
+                                                        </td>
+                                                    </tr>
+
+                                                </table>
+                                                <a href="" class="btn btn-primary pull-right" target="_blank" id="downloadCSV2" style="margin: 0px 10px 0px 0px;"> Download File</a>
+                                                <button type="button" id="validate" class="btn btn-primary pull-right"
+                                                    style="margin: 0px 10px;" id="">
+                                                    Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+
+                                </div>
+                            </div>
+
+
+
+                            <!-- <div class="footerBtn" id="floated">
+                                    
+                                  
+                                <button type="button" class="btn btn-primary pull-right" style="margin: 0px 10px;" id="">
+                                   Submit</button>
+                                    </a>
+                            </div> -->
+                            <div class="clearfix"></div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+
+        Copyrights &copy; 2020 Intain. All Rights Reserved.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./static/js/custom.js"></script>
+    <script src="./static/js/calculations.js"></script>
+
+    <script type="text/javascript" src="./static/js/jquery.serializeToJSON.js"></script>
+    <style>
+        /* #data_table{
+    box-shadow: 0px 0px 5px #ccc;
+}
+    .container-fluid{ float: left; width: 35%;  padding:10px 20px; border-bottom: 1px solid #ccc}
+    .container-fluid strong{ font-size: 16px; font-weight: bold; line-height: 35px; display: block;}
+    .container-fluid .textValue{ font-size: 16px; line-height: 35px; color: #349174; font-weight: bold; text-align: left;} */
+        #data_table {
+            padding: 30px 0px;
+        }
+
+        .tablePlaceholerDetails {
+            background: none;
+        }
+
+        .text-outer {
+            border-radius: 5px;
+            height: 100%;
+            padding: 20px 20px 45px 20px;
+            box-shadow: 0px 0px 10px #d6d6d6;
+            background: #fff;
+            text-align: center;
+        }
+
+        .charts .chart_outer {
+            border-radius: 5px;
+            height: 100%;
+            padding: 20px 20px 20px 20px;
+            box-shadow: 0px 0px 10px #d6d6d6;
+            background: #fff;
+            text-align: center;
+        }
+
+        p.param {
+            padding: 15px;
+            font-weight: bold;
+            margin: 0px !important;
+        }
+
+        .text-outer .text {
+            font-size: 16px;
+            font-weight: bold;
+            display: block;
+            padding: 0 0 15px 0;
+        }
+
+        .text-outer .number {
+            font-size: 20px;
+            font-weight: bold;
+            color: #3aaa97 !important;
+            position: absolute;
+            bottom: 15px;
+            text-align: center;
+            width: 100%;
+            left: 0px;
+        }
+
+        /* .text-outer .number{} */
+        /* #data_table .col-sm-4:nth-child(2n+2) .number {color: #CCC!important} */
+        #data_table .col-sm-4 {
+            margin-bottom: 20px;
+        }
+
+        section.mainContent {
+            margin: 20px 0px !important;
+        }
+
+        .chart_outer12 {
+            background: #fff;
+            margin: 15px;
+            border-radius: 5px;
+            /* height: 100%; */
+            padding: 20px 20px 20px 20px;
+            box-shadow: 0px 0px 10px #d6d6d6;
+            background: #fff;
+        }
+
+        #data_table {
+            border: 1px solid #ccc;
+        }
+
+        #data_table tr {
+            display: block;
+            float: left;
+            border-bottom: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            width: 50%;
+        }
+
+        #data_table tr td {
+            padding: 15px 15px;
+            width: 50%;
+            float: left;
+        }
+
+        #data_table tr td:last-child {
+            padding: 15px 0px 15px 90px
+        }
+
+        /* #data_table tr:nth-child(odd){
+        background: #f5f5f5;
+    } */
+        /* #data_table tr:nth-child(2n+2){
+        background: #f5f5f5;
+    } */
+
+        #data_table tr:nth-child(4n+1),
+        #data_table tr:nth-child(4n+2) {
+            background-color: #f5f5f5;
+        }
+
+        .chart_outer12 h5 {
+            font-weight: bold;
+            color: #349174;
+        }
+
+        #myChart11 {
+            width: 100% !important;
+            height: 400px !important;
+            max-width: 100% !important;
+        }
+
+        #densityChart {
+            width: 100% !important;
+            height: 400px !important;
+            max-width: 100% !important;
+        }
+    </style>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+
+</body>
+
+</html>

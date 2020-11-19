@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./static/style.css">
+
+    <title>:: Welcome to IN-D Credit ::</title>
+</head>
+
+<body class="loginbody">
+
+        <div id="success" class="col-md-12 alert alert-success" style="display: none;">success</div>
+
+        <div id="error" class="col-md-12 alert alert-danger" style="display: none;">Error</div>
+
+
+    <div class="container register" id="b4login">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                
+
+                <img src="./static/images/Robot-IND.png" class="rocket" alt=""/>
+
+                <div class="logo"><a href="index.html"><img src="./static/images/ind_logo.png"></a></div>
+
+                <span class="analyzer" style="color: #fff">IN-D Credit</span>
+                <p>&nbsp;</p>
+                <a href="index.html" class="btnRegister">Login</a> <br/>
+            </div>
+            <div class="col-md-9 register-right">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+
+                            <div class="b4loginMobile">
+                
+
+                                            
+                            
+                                    <div class="logo"><a href="index.html"><img src="./static/images/ind_logo.png"></a></div>
+                    
+                                    
+                                    
+                                    
+                                </div>
+
+                        <h3 class="register-heading">Register </h3>
+
+
+                       
+
+                        
+                        
+                        <form method="POST" id="regsiterForm">
+                        <div class="row register-form">
+
+                                
+                        
+                                
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="firstname" id="firstname" class="form-control" placeholder="First Name *" required value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Last Name *"  value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="password" id="password" class="form-control" placeholder="Password *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="cpassword" id="cpassword" class="form-control"  placeholder="Confirm Password *" value="" />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" name="emailid" id="emailid" class="form-control" placeholder="Email *" value="" />
+                                </div>
+                               
+                                
+                                
+
+                             
+                            </div>
+                            <div class="col-md-6">
+
+                                    <div class="form-group">
+                                            <input type="text" id="phone" minlength="10" maxlength="10" name="phone" class="form-control" placeholder="Phone *" value="" />
+                                        </div>
+        
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="companyname" id="companyname"  placeholder="Company Name *" value="" />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="jobtitle" id="jobtitle"  placeholder="Job Title *" value="" />
+                                </div>
+
+                                <div class="form-group">
+                                    <select class="form-control" name="question" id="question">
+                                        <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                                        <option>What is your Birthdate?</option>
+                                        <option>What is Your old Phone Number</option>
+                                        <option>What is your Pet Name?</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="answer" id="answer" class="form-control" placeholder="Enter Your Answer *" value="" />
+                                </div>
+
+
+                                <input type="submit" class="btnRegister" id="registerBtn"  value="Register"/>
+                                <div id="wait2" class="" style="display: none;">
+                                        <img src="./static/images/loader.gif" class="loader" />
+                                </div>
+
+                                
+
+                            </div>
+
+                            <div class="b4loginMobile col-md-12"> <a href="index.html" class="btnRegister">Login</a> </div>
+
+                        </div>
+                    </form>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" crossorigin="anonymous"></script>
+    
+    <!-- <script src="./static/js/custom.js"></script> -->
+
+    
+    <!--Login API called-->
+    <script src="./static/js/register.js"></script>
+
+
+</body>
+
+</html>

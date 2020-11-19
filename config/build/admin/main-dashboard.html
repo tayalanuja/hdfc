@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/jquery-ui.css" />
+    <title>Welcome to IN-D Credit :: Powered by Intain Technologies</title>
+    <style>
+        .dz-default.dz-message {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css"
+        href="./static/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+</head>
+
+<body>
+
+    <div id="success" class="col-md-12 alert alert-success" style="display: none; position: fixed;">Data updated
+        successfully !! </div>
+    <div id="error" class="col-md-12 alert alert-danger" style="display: none;"></div>
+
+    <header class="topHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 col-sm-10 col-md-10">
+                    <div class="logoPlaceholder">
+                        <a href="main-dashboard.html">
+                            <img src="./static/images/ind_logo.png">
+                        </a>
+                        <span class="analyzer">IN-D Credit</span>
+                    </div>
+                    <div class="wizard-form">
+                        <div class="form-register" id="form-register">
+                            <div class="steps clearfix">
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-2 col-sm-2 col-md-2 text-right">
+                    <div class="dropdown">
+                        <a href="#nogo" data-toggle="dropdown">
+                            <img src="./static/images/user.png"> Welcome,
+                            <strong>User</strong>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Update Profile</a>
+                            <a class="dropdown-item" href="#">Settings </a>
+                            <!-- <a class="nav-item nav-link" href="index.html" id="logoutBtn"><i class="settings"></i>Logout</a> -->
+                            <a href="index.html">
+                                <button type="submit" class="logoutBtn btn-primary btn col-12" class="btn btn-primary"
+                                    style="width:200px; margin-left:-50px;">Logout</button>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mainMenu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12">
+                    <nav class="navbar navbar-expand-lg">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="wait2" class="loadingIcon" style="display: none;"> <img src="./static/images/loader.gif" class="loader" />
+        Please wait.... </div>
+
+    <section id="mainContent">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-12 col-sm-12 col-md-12" style="display: flex!important;margin-top: 20px;">
+              
+                    <div class="col-md-3"> 
+                       </div>
+                   <div class="col-md-3 text-right">
+                        <a class="green" data-toggle="tooltip" > </a>
+                        <span>Confidence level between 80 to 100</span>
+                   </div>
+
+                   <div class="col-md-3 text-right">
+                        <a class="orange" data-toggle="tooltip" > </a>
+                        <span>Confidence level between 50 to 79</span>
+                   </div>
+                   <div class="col-md-3">
+                        <a class="red" data-toggle="tooltip" > </a>
+                        <span>Confidence level between 0 to 49</span>
+                   </div>
+
+               </div> -->
+
+                <div class="col-12 col-sm-12 col-md-12">
+                    <section class="mainContent" style="background: none; color: #333;">
+                        <header class="pageHeading" style="background: none; color: #333; padding-bottom: 50px;">
+                            Dashboard</header>
+
+                        <!-- <button class="btn btn-primary fr" id="autoRefresh" type="submit">
+                            <span id="container"></span>
+                            Auto Refresh</button> -->
+                        <div class="row justify-content-center " id="mainBox">
+                            <div class="col-3 col-sm-3 col-md-3">
+                                <a href="dashboard.html">
+                                    <div class="inner">
+                                        <img src="static/images/Bank-statement.svg">
+                                        <h5>Bank Statement Dashboard</h5>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="col-3 col-sm-3 col-md-3">
+                                <a href="dashboard-salaryslip.html">
+                                    <div class="inner">
+                                        <img src="static/images/Payslip.svg">
+                                        <h5>Salary Slip Dashboard</h5>
+
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        Copyrights &copy; 2020 Intain. All Rights Reserved.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./static/js/custom.js"></script>
+    <!-- <script src="./static/js/index.js"></script> -->
+    <script type="text/javascript" src="./static/js/jquery.serializeToJSON.js"></script>
+</body>
+
+</html>
