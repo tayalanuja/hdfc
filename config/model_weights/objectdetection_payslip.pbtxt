@@ -1,0 +1,111 @@
+item {
+  id: 1
+  name: 'employee_name'
+}
+item {
+  id: 2
+  name: 'employee_gender'
+}
+item {
+  id: 3
+  name: 'employee_emailid'
+}
+item {
+  id: 4
+  name: 'employee_mobileno'
+}
+
+item {
+  id: 5
+  name: 'employee_panno'
+}
+
+item {
+  id: 6
+  name: 'employee_doj'
+}
+
+item {
+  id: 7
+  name: 'employee_designation'
+}
+
+item {
+  id: 8
+  name: 'employer_name'
+}
+item {
+  id: 9
+  name: 'employer_address'
+}
+item {
+  id: 10
+  name: 'employer_email'
+}
+item {
+  id: 11
+  name: 'employer_mobileno'
+}
+item {
+  id: 12
+  name: 'net_salary'
+}
+item {
+  id: 13
+  name: 'period_of_pay'
+}
+item {
+  id: 14
+  name: 'bank_acct_no'
+}
+
+item {
+  id: 15
+  name: 'bank_name'
+}
+
+item {
+  id: 16
+  name: 'bank_ifsc'
+}
+
+item {
+  id: 17
+  name: 'branch'
+}
+item {
+  id: 18
+  name: 'employee_id'
+}
+item {
+  id: 19
+  name: 'employee_uanno'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
